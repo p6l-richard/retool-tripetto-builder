@@ -57,6 +57,7 @@
     "tripetto-block-picture-choice": "^4.2.1",
     "tripetto-block-text": "^5.0.4",
     "tripetto-block-textarea": "^5.1.2",
+    "tripetto-block-url": "^5.0.1",
     "tripetto-runner-autoscroll": "^5.7.1",
     "tripetto-runner-foundation": "^6.3.0"
   }

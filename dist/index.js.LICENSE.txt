@@ -50,6 +50,8 @@ object-assign
 
 /*! Tripetto Textarea Block 5.1.2 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
 
+/*! Tripetto URL Block 5.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
 /** @license React v0.20.2
  * scheduler.production.min.js
  *
