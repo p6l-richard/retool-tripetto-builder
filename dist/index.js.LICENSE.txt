@@ -4,6 +4,50 @@ object-assign
 @license MIT
 */
 
+/*! Tripetto Autoscroll Runner 5.7.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Calculator Block 3.1.2 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Checkbox Block 5.1.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Checkboxes Block 6.1.3 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Date Block 3.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Device Condition Block 4.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Dropdown Block 5.1.2 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Email Block 5.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Error Block 4.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Evaluation Condition Block 3.0.2 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto File Upload Block 4.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Hidden Field Block 5.0.3 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Mailer Block 5.0.2 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Matrix Block 4.1.2 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Multiple Choice Block 5.2.3 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Number Block 7.0.3 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Paragraph Block 4.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Password Block 5.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Phone Number Block 3.0.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Picture Choice Block 4.2.1 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Runner Foundation 6.3.0 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
+/*! Tripetto Text Block 5.0.4 - Copyright (C) 2022 Tripetto B.V. - All Rights Reserved */
+
 /** @license React v0.20.2
  * scheduler.production.min.js
  *
@@ -15,6 +59,15 @@ object-assign
 
 /** @license React v17.0.2
  * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
