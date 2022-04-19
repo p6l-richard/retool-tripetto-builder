@@ -28,7 +28,7 @@ const BUILDER_CONFIG = {
   disableSaveButton: true,
   disableCloseButton: true,
   disableTutorialButton: false,
-  controls: "right",
+  controls: "left",
   disableEditButton: true,
   supportURL: false,
   disablePrologue: true,
