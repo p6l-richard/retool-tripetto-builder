@@ -1,12 +1,13 @@
 {
   "name": "retool-tripetto-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tripetto's form builder with live preview implemented in React.",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf examples && yarn install",
     "dev": "webpack-dev-server --mode=development",
-    "prod": "webpack --mode=production"
+    "prod": "webpack --mode=production",
+    "publish": "yarn run prod && yarn publish"
   },
   "files": [
     "/dist"
