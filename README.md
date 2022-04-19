@@ -1,112 +1,32 @@
-# Retool + BYO: React Custom Components 
-If you have a use case that isn't handled by Retool's built-in components, you can build your own custom component to solve that use case. Really anything that can be compiled down to javascript can be used within Retool's custom components. While Retool allows you to write React directly within its iframe code, you may find it limiting in regards to development environment or packages that can be added; this repository breaks down both barriers.
+# `retool-tripetto-builder`: Tripetto's form builder hosted in a Retool custom component
 
-The purpose of this repository is to give a React developer a baseline development envrionment that includes
-- local development of your custom component available within your Retool app
-- an example of hot reload within the Retool sandbox'd iframe
-- add any npm package to use in the component library
-- bring your own component library example
-- examples of reading or updating data in your Retool app
-- examples of triggering queries
-- moving from development to production either inline or through a CDN
+## Usage
 
-We are accepting bugs and feature requests to this repository through issues.
+You can use this package in a retool's custom component and it will render tripetto's form builder with the live preview.
 
-# Getting Started
+[Usage!]](https://imgur.com/a/fLjQn93)
 
-Getting started with local development happens in two parts, cloning this repository and setting up your Retool application to listen to it:
+## Quickstart
+1. Add a custom component to your retool application
+2. Update the component's iFrame Code
+    In the component inspector, replace the default IFrame Code with the following:
 
-1. Setting up local environment
-    - Clone repository
-    - Install dependendencies
-2. Setting up Retool application
-    - Add a custom component to the application
-    - Update the component's iFrame Code
-    - Update the component's Model
+    ```html
+    <script type="text/javascript" src="https://unpkg.com/retool-tripetto-builder@latest/dist/index.js" />
+    ```
+3. Update the component's Model
+    In the component inspector, replace the Model value with the following:
 
-## Setting up local environment
+    ```typescript
+    {
+      "formDefinition": <formDefinition> // <-- input (can be populated by retool query)
+    "formDefinitionOutput": {} // <-- output (can be references in retool app as `customComponentName.model.formDefinitionOutput)
+    }
+    ```
 
-```shell
-git clone git@github.com:tryretool/custom-component-guide.git
-cd custom-component-guide
-yarn install
-yarn dev
-```
+## Local Development
+TBD
+## Notes
+Tripetto builder inspired by [Tripetto SDK / Builder / React / Live preview with autoscroll runner](https://codesandbox.io/s/tripetto-sdk-builder-react-live-preview-with-multiple-runners-forked-5x13mw?file=/src/builder.js:963-1071)
 
-After starting the webpack dev server with `yarn dev` and the example dev server servers your built javascript at `http://localhost:8080/main.js`. Once the dev server is running, open up a Retool application, and drag a custom component on to the canvas. 
-
-In the component inspector, replace the default iFrame code with the following:
-
-```html
-<script type="text/javascript" src="http://localhost:8080/index.js" />
-```
-
-In the component inspector, replace the Model value with the following:
-
-```
-{
-  "greeting": "Hello, ",  
-  "username": {{ current_user.fullName }},
-  "message": "Welcome to custom components!",
-  "yesQuery": "yesQuery",
-  "noQuery": "noQuery",
-  "runQuery": "runQuery"
-}
-```
-
-
-## Developing in this repository
-You're all setup to start developing locally and having your changes appear in your Retool application; happy coding!
-While running `yarn dev` you can easily modify `src/index.js` and `src/ExampleComponent.js`.
-
-
-# BYO Component Library
-You may wish to use your own component library in Retool for specific styling or UI elements; however, we encourage you to reach out and file a feature request! If you are bringing your own component, this repository can give you examples of how to extend your library and use it as first class components in Retool. When a custom component is available in an application, it loads into a sandbox'd iframe to give you control over an HTML document javascript. Retool will also provide you with an interface to help communicate with the Retool application; you can read more [here]("https://docs.retool.com/docs/custom-react-components#interface")
-
-## Retool.createReactComponent()
-Retool's sandboxed iframe will provide a wrapper for React components for you to access the interface, which are available in the document at `Retool.createReactComponent()`. If your components are wrapped in this function, `model`, `modelUpdate`, and `triggerQuery` will be available for your component. For example:
-
-```javascript
-// index.js
-import MyComponent from './MyComponent';
-const RetoolConnectedComponent = Retool.connectReactComponent(App);
-ReactDOM.render(
-  <RetoolConnectedComponent />, 
-  document.body.appendChild(document.createElement('div')) 
-);
-```
-
-Now within MyComponent, you have access to , `model`, `modelUpdate`, and `triggerQuery` through its props. For example:
-```javascript
-// MyComponent.js
-export default function MyComponent ({model, modelUpdate, triggerQuery, ...props}) {
-  // ... your component
-}
-```
-
-Alternatively, you can wrap your export with `Retool.createReactComponent()`
-
-```javascript
-// MyComponent.js
-const MyComponent = ({model, modelUpdate, triggerQuery, ...props}) => {
-  // ... your component
-}
-export default Retool.connectReactComponent(App);
-```
-
-```javascript
-// index.js
-import MyComponent from './MyComponent';
-ReactDOM.render(
-  <MyComponent />, 
-  document.body.appendChild(document.createElement('div')) 
-);
-```
-
-# Examples
-Coming Soon!
-
-
-
-# Deploying
-Coming Soon!
+Package inspired by [tryretool/custom-component-guide](https://github.com/tryretool/custom-component-guide)
