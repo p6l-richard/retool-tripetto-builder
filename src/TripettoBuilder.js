@@ -3,6 +3,7 @@ import { Builder } from "tripetto";
 import { run } from "tripetto-runner-autoscroll";
 import "./styles.scss";
 import "tripetto-block-text";
+import "tripetto-block-textarea";
 import "tripetto-block-calculator";
 import "tripetto-block-checkbox";
 import "tripetto-block-checkboxes";

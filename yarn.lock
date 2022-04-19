@@ -4470,6 +4470,11 @@ tripetto-block-text@^5.0.4:
   resolved "https://registry.yarnpkg.com/tripetto-block-text/-/tripetto-block-text-5.0.4.tgz#351dac665a0423ef7b068563e0112e03f1ccc9a6"
   integrity sha512-nlUM/Ng3VvsGKP5dQRL5PZe+03G880xu6uMs1C2wo2rvPBOpriktjqZe2LVHNTsJrkT8XQ/n8P/9o1ywV1lstg==
 
+tripetto-block-textarea@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/tripetto-block-textarea/-/tripetto-block-textarea-5.1.2.tgz#bdb2090200f200f6eb7b72b7f0c9d2678dc2363a"
+  integrity sha512-9zMIsnImLqjq4mRZAIVHkpaCmwFLbFBvBOt4Y1m1zNQTJgplskfU2jSbaR3WouQSSoJofLbVjfTYFX3DrQ5+yw==
+
 tripetto-runner-autoscroll@^5.7.1:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/tripetto-runner-autoscroll/-/tripetto-runner-autoscroll-5.7.1.tgz#b91a2619ebaeaf23aec0a02e81ba93b3729d12b6"
