@@ -1,6 +1,6 @@
 {
   "name": "retool-tripetto-builder",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Tripetto's form builder with live preview implemented in React.",
   "main": "index.js",
   "scripts": {
